@@ -1,0 +1,862 @@
+/*样式初始化*/
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+body{font-family: "微软雅黑";}
+a{text-decoration: none;}
+a{cursor: pointer;}
+a:hover{color: #008b56;}
+hr{color: #ccc;margin-top: 19px;width: 730px;margin-left: 0px;margin-bottom: 15px;}
+body{position: relative;}
+/*header部分*/
+header{
+	width: 1903px;
+	height: 113.5px;
+}
+/*header上部*/
+.header-top{
+	width: 1903px;
+	height: 32.5px;
+	background-color: #000;
+	color: #fff;
+	font-size: 14px;
+	line-height: 32.5px;
+}
+/*header下部*/
+.header-buttom{
+	width: 1903px;
+	height: 80px;
+	background-color: #fff;
+}
+/*header上部分的左边的导航*/
+.header-t-left{
+	margin-left: 412px;
+	width: 380px;
+	height: 32.5px;
+	float: left;
+}
+.header-t-left>span{
+	margin-right: 18px;
+}
+.header-t-right{
+	width: 236px;
+	height: 32.5px;
+	float: right;
+	margin-right: 412px;
+}
+.header-t-right>span{
+	margin-left: 31px;
+}
+/*放logo图的大小*/
+.header-b-left{
+	width: 180px;
+	height: 40px;
+	margin-left: 412px;
+}
+/*logo图片距离上边的距离*/
+.header-b-left>img{
+	margin-top: 20px;
+}
+/*右边的首页等导航的宽高*/
+.header-b-right{
+	width: 480px;
+	height: 80px;
+	margin-right: 412px;
+	float: right;
+	margin-top: -10px;
+}
+/*每一个导航的间距字体*/
+.header-b-right>span{
+	margin-left: 41px;
+	font-size: 17px;
+	color: #000000
+}
+.header-b-right a{
+	color: #000000
+}
+/*设置搜索图片的宽高*/
+.header-b-right>span:last-child{
+	width: 30px;
+	height: 40px;
+}
+/*搜索图片的路径*/
+.seach{
+	background:url(../images/icoss.png) no-repeat;
+	width: 30px;
+	height: 40px;
+}
+/*header部分完毕*/
+/*section部分开始*/
+/*section的宽高*/
+section,nav,html>body{
+	background-color: #f0f0f0;
+}
+.section-one,{
+	display: block;
+	margin-top: -1227px;
+	width: 791px;
+}
+.section-two,.section-three{
+	background-color: #f0f0f0;
+	display: none;
+	margin-left: 412px;
+	/*margin-top: -13px;*/
+}
+.section-three{
+	overflow: hidden;
+	width: 800px;
+}
+.section-four,.section-five{
+	display: none;
+}
+.bmw{
+	width: 794px;
+}
+nav{
+	display: block;
+}
+.section-main{
+	width: 790px;
+	margin-left: 399px;
+	margin-right: 716px;
+	background-color: #fff;
+	margin-top: 20px;
+}
+/*热帖推荐的样式*/
+.hot{
+	width: 790px;
+	height: 54px;
+	background-color: #e5e5e5;
+	line-height: 54px;
+	font-size: 18px;
+}
+/*第一个评论的位置*/
+.ddfirst{
+	margin-top: 30px;
+	margin-left: 30px;
+}
+/*用户头像的宽高*/
+.userimg{
+	width: 60px;
+	height: 60px;
+	padding: 0px;
+}
+/*用户头像圆形化*/
+.userimg>img{
+	border-radius: 50%;
+}
+/*用户名和用户等级*/
+.tuserNL{
+	float: left;
+	margin-left: 69px;
+	margin-top: -54px;
+}
+/*发表的图片的左上边距*/
+.userphoto{
+	margin-left: 69px;
+	margin-top: 15px;
+}
+/*发表的图片大小*/
+.userphoto>img{
+	width: 160.31px;
+	height: 160.31px;
+}
+/*用户名位置*/
+.tusername{
+	margin-top: -20px;
+}
+/*用户等级位置*/
+.tuserlv{
+	margin-left:5px;
+	margin-top: -20px;
+	color: #ffb267;
+}
+/*用户的文字评论*/
+.tuseranwser{
+	margin-left: 69px;
+}
+/*用户发表评论的来源的位置*/
+.tsource{
+	margin-left: 68px;
+	margin-top: 20px;
+	font-size: 13px;
+	color: #ccc;
+	width: 288px;
+	height: 35px;
+	float: left;
+}
+/*aside部分开始*/
+aside{
+	/*right: 400px;
+	top: -1750px;*/
+	/*margin-right: 412px;*/
+/*	margin-top: 20px;*/
+	width: 270px;
+	height: 1327px;
+	float: right;
+	position: absolute;
+}
+.another-aside{
+	width: 270px;
+	height: 949px;
+	margin-top: 87px;
+}
+.another-aside>div:nth-child(1){
+	width: 270px;
+	height: 100px;
+}
+/*aside下的所有div的背景颜色和下边距*/
+aside>div{
+	background-color: #fff;
+	margin-bottom: 19px;
+}
+/*为了增加优先级*/
+aside>div>.aside-one>li:nth-child(1){
+	background-color: #e5e5e5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 54px;
+    width: 270px;
+    line-height: 54px;
+    font-size: 20px;
+ }
+aside>div>.aside-one>li:nth-child(6){
+	width: 270px;
+	height: 60px;
+	font-size: 9px;
+	color: #008b56;
+}
+.aside-one>li:nth-child(6)>a{
+	float: right;
+	margin-right: 20px;
+	font-size: 15px;
+}
+.aside-one>li{
+	width: 270px;
+	height: 61px;
+	border-bottom: 1px solid #eee;
+	line-height: 61px;
+}
+.tag{
+	width: 207px;
+	height: 204px;
+}
+.tag>li{
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+	margin-left: 24px;
+	margin-top: 1.5px;
+}
+.tag>li>a{
+	color: #555;
+}
+.tag>li>a:hover{
+	color: #008b56;
+}
+/*热门标签*/
+.hotTag{
+	width: 270px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 20px;
+	background-color: #e5e5e5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.focusme{
+	width: 270px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 20px;
+	margin-right: 20px;
+	background-color: #e5e5e5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+	position: relative;
+}
+img{
+	vertical-align: middle;
+}
+.focusme>span{
+	float: left;
+	position: absolute;
+	left: 20px;
+}
+.header-b-right>span>.colorAdd{
+	color: #008b56;
+}
+/*aside的签到和发帖的宽高*/
+aside>div:nth-child(2){
+	width: 270px;
+	height: 100px;
+}
+/*aside的签到和发帖的文字字体大小*/
+aside>div:nth-child(2)>span>a,aside>div:nth-child(3)>span>a{
+	margin-left: 144px;
+	font-size: 20px;
+	line-height: 80px;
+	margin-bottom: 20px;
+}
+/*签到人数*/
+aside>div:nth-child(3)>span>h6{
+	margin-left: 126px;
+	margin-top: -20px;
+}
+.firstFive{
+	width: 270px;
+	height: 136px;
+	overflow: hidden;
+}
+.last-aside{
+	width: 270px;
+	height: 136px;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+}
+aside>div:nth-child(5)>span>div:nth-child(2)>h4{
+	font-size: 18px;
+	
+}
+aside>div:nth-child(5)>span>div:nth-child(2)>a{
+	font-size: 12px;
+	margin-top:-10px ;
+	color: #008b56;
+}
+.weibo{
+	width: 270px;
+	height: 103px;
+	border-bottom: 1px solid #eee;
+	font-size: 18px;
+}
+.tlog_4{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	margin:76px 0 0 36px;
+	float:left;
+	background-image:url(../images/icoss.png);
+	background-position:-200px -210px;
+}
+.tlog_5{
+	width:22px;
+	height:18px;
+	margin:83px 7px
+	 0 36px;
+	float:left;
+	background-image:url(../images/icoss.png);
+	background-position:-160px 0px;
+}
+.tlog_6 div{
+	margin-top:22px;
+	float: left;
+}
+.tlog_6_1 a{
+	font-size:12px;
+	float: right;
+}
+.tlog_6_1{
+	width:64px;
+	height:22px;
+	border: 1px solid #BBBBBB;
+	line-height:22px;
+	border-radius:2px;
+	color:#5582bd;
+	box-shadow:0.5px 0.51px #CCCCCC;
+	background:#EEEEEE;
+	position: relative;
+	top: -22px;
+	cursor: pointer;
+}
+.tlog_6_1 div{
+	width:18px;
+	height:14px;
+	background-image: url(../images/icoss.png);
+	background-position:-160px -3px;
+	margin:5px 0 0 5px;
+}
+.tlog_7{
+	width:60px;
+	height:60px;
+	margin:19px 0 0 41px;
+	float:left;
+	background-image:url(../images/icoss.png);
+	background-position:-200px -280px;
+}
+.tlog_7_1{
+	float:right;
+	margin:23px 34px 0 0;
+}
+.tlog_7_1 a{
+	color: #7D7D7D;
+	font-size:13px;
+	float: right;
+	margin:-30px 0 0 0;
+}
+.tlog_7_1 span{
+	float: right;
+	margin:-30px 0 0 0;
+}
+.tlog_8{
+	width: 22px;
+	height:18px;
+	margin:1px 0px 0 -27px;
+	float:left;
+	background-image:url(../images/icoss.png);
+	background-position:-160px -30px;
+}
+.aSide_sixth{
+	margin-top: 10px;
+	height: 259px;
+}
+/*先结束aside部分*/
+/*做轮播图部分*/
+nav>.banner{
+	width: 1080px;
+	height: 414px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.banner>ul li>img{
+	float: left;
+	display: inline;
+	position: absolute;
+}
+/*下面的圆点索引*/
+.fivedot{
+	width: 108px;
+	height: 18px;
+	margin-top: 0px;
+	margin-left: 900px;
+}
+.fivedot li{
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	z-index: 100;
+	cursor: pointer;
+	text-align: center;
+}
+
+/*社区的那个选项卡*/
+.topic{
+	margin-right: 412px;
+	line-height: 50px;
+	margin-top: 22px;
+	width: 300px;
+	height: 55px;
+}
+.four-topic{
+	width: 300px;
+	height: 1255px;
+	margin-left: 412px;
+}
+.rectangle{
+	width: 90px;
+	height: 50px;
+	background-color: #fff;
+	float: left;
+}
+.right-triangle{
+	width: 0;
+	height: 0;
+	border-top: 36.5px solid #fff;
+	border-right: 36.5px solid transparent;
+	float: left;
+	transform:rotate(135deg);
+	margin-left: -19px;
+	margin-top: 6px;
+}
+.triangle-topright{
+	width: 0;
+	height: 0;
+	border-top: 25.5px solid #fff;
+	border-left: 25.5px solid transparent;
+	margin-left: -5px;
+}
+.triangle-bottomright{
+	width: 0;
+	height: 0;
+	border-bottom: 24.5px solid #fff;
+	border-left: 25.5px solid transparent;
+	margin-left: -5px;
+}
+.square{
+	float: left;
+	margin-left: -10px;
+}
+.baga{
+	margin-top: -49.5px;
+	margin-left: 20px;
+	width: 60px;
+}
+.ohno{
+	float: right;
+	margin-top: -44.5px;
+	margin-right: -17px;
+}
+/*推荐话题,热门话题,全部话题这个div的宽高字体等等*/
+.conversation{
+	width: 785px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 32px;
+	font-size: 18px;
+	background-color: #fff;
+}
+/*推荐话题,热门话题,全部话题的左浮动与右边距*/
+.conversation>ul>li{
+	float: left;
+	margin-right: 30px;
+}
+/*推荐话题的四个话题的样式宽高*/
+.ulist{
+	margin-right: 412px;
+	margin-top: 20px;
+	background-color: #fff;
+	width: 783px;
+	position: relative;
+}
+.firstTopic{
+	width: 795px;
+	height: 169px;
+	overflow: hidden;
+}
+/*将话题部分分为三个部分,然后让他们左浮动*/
+.firstTopic>div>div{
+	float: left;
+}
+/*设置推荐话题中图片与描述的上左边距*/
+.firstTopic>div>div:nth-child(2),.firstTopic>div>div:nth-child(1){
+	margin-left: 25px;
+	margin-top: 30px;
+}
+.topic-describe{
+	width: 424px;
+	height: 118px;
+}
+/*推荐话题中的描述*/
+.topic-describe>p{
+	margin-top: 12px;
+}
+/*推荐话题中的那个关注按钮*/
+.firstTopic>div>.follow{
+	margin-left: 106px;
+	margin-top: 80px;
+	width: 65px;
+	height: 25px;
+	background-color: #eefaf9;
+	border: 1px solid #008b56;
+	border-radius: 25px;
+	line-height: 25px;
+	text-align:center;
+}
+.firstTopic>div{
+	width: 100%;
+	height: 100%;
+}
+/*推荐话题选项卡中的话题题目的字体大小*/
+.topic-describe>a{
+	font-size: 19px;
+}
+/*推荐话题中的hr*/
+.hrTwo{
+	width: 783px;
+	margin-left: 0px;
+	color: #eee;
+}
+.topicimg{
+	width: 120px;
+	height: 120px;
+}
+/*话题讨论中需要隐藏的选项卡*/
+.hidden{
+	display: none;
+}
+.endphoto{
+	width: 800px;
+	height: 352.5px;
+}
+.change:hover{
+	opacity: 0.5;
+}
+.manyPhoto,.toomuchPhoto{
+	width: 800px;
+	margin-top: -9px;
+}
+.endphoto>div:nth-child(2){
+	width: 800px;
+	height: 60px;
+	background-color: #fff;
+	padding: 0px;
+}
+.happyending{
+	width: 56px;
+	height: 28px;
+	background-color: #bbb;
+	border-radius: 7px;
+	line-height: 28px;
+	text-align:center;
+	margin-top: 17px;
+	color: #fff;
+	margin-left: 20px;
+}
+.endphoto>div:nth-child(2){
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	background-color: #f0f0f0;
+}
+.endingspeak{
+	margin-left: 90px;
+	margin-top: -20px;
+}
+.toomuchPhoto>li{
+	margin-top: 20px;
+	border: 1px solid #ccc;
+}
+.phototable>td{
+	width: 252px;
+	height: 296px;
+}
+.paikephoto{
+	margin-left: 412px;
+	width: 791px;
+}
+.bgimg{
+	background:url(../images/table12.jpg) no-repeat;
+	width: 250.5px;
+	height: 252px;
+}
+.smallimg{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: url(../images/smallimg1.jpg) no-repeat;
+}
+.phototable>td>div:nth-child(2){
+	width: 250.5px;
+	height: 67px;
+	background-color: #fff;
+}
+.table-user{
+	margin-right:40px;
+}
+footer{
+	width: 1903px;
+	height: 140px;
+	background-color: #2b2b2b;
+	color: #cacaca;
+	line-height: 2em;
+	padding: 2em 0;
+	position: relative;
+}
+
+footer>ul>li{
+	text-align: center;
+	width: 515px;
+	height: 27px;
+}
+footer>ul{
+	position: absolute;
+	left: 690px;
+	width: 515px;
+}
+.fsize{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family: Arial;
+}
+/*小图标的位置定位*/
+.header-b-right>span:last-child{
+	width: 17px;
+	height: 21px;
+}
+.seach{
+	width: 17px;
+	height: 21px;
+	background-position: top left;
+	background-image: url(../images/icoss.png);
+	float: right;
+	margin-right: 15px;
+}
+.uptie{
+	width: 80px;
+	height: 60px;
+	background-position: -194px 0px;
+	background-image: url(../images/icoss.png);
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+.fabiao{
+	float: left;
+	margin-top: 40px;
+	margin-left: 70px;
+	font-size: 19px;
+}
+.tohere{
+	width: 80px;
+	height: 60px;
+	background-position: -194px -70px;
+	background-image: url(../images/icoss.png);
+	/*margin-top: 20px;
+	margin-left: 20px;*/
+	margin:24px 24px;
+	float: left;
+	
+}
+aside{
+	position: absolute;
+	right: 410px;
+}
+.aside-three{
+	margin-top: 20px;
+	width: 270px;
+	height: 110px;
+}
+.aside-four{
+	margin-top: 20px;
+}
+.comehere{
+	float: left;
+	font-size: 19px;
+	margin-top: -85px;
+	margin-left: 150px;
+}
+.aside-samll{
+	float: left;
+	display: inline-block;
+	margin-left:129px;
+	margin-top: -50px;
+	font-size: 13px;
+}
+.erweima{
+	width: 100px;
+	height: 111px;
+	margin-top: 17px;
+	background-image:url(../images/erweima.png);
+	margin-left: 10px;
+	background-size: 100px 110px;
+	padding: 0px;
+}
+.opposhequ{
+	margin-left: 10px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.downshequ{
+	width: 136px;
+	height: 75px;
+	margin-left: 119px;
+	margin-top: -91px;
+}
+.aside-weibo{
+	width: 66px;
+	height: 62px;
+	background-position: -194px -209px;
+	background-image: url(../images/icoss.png);
+	margin-left: 10px;
+}
+.aside-wechat{
+	width: 66px;
+	height: 60px;
+	background-position: -194px -279px;
+	background-image: url(../images/icoss.png);
+}
+.small-weibo{
+	background-image: url(../images/icoss.png);
+	width: 22px;
+	height: 18px;
+	background-position: -158px 0px;
+	float: left;
+}
+.right-weibo{
+	margin-left: 167px;
+	margin-top: -29px;
+	width: 115px;
+	height: 53px;
+}
+.small-wechat{
+	background-image: url(../images/icoss.png);
+	width: 22px;
+	height: 18px;
+	background-position: -158px -29px;
+	float: left;
+}
+.right-wechat{
+	margin-left: 167px;
+	margin-top: -45px;
+	width: 115px;
+	height: 53px;
+}
+.home-source,.home-look,.home-love,.home-chat,.home-chat{
+	float: left;
+}
+.lscl{
+	width: 335px;
+	height: 24px;
+	margin-left:69px;
+	float: left;
+	margin-top: 16px;
+	font-size: 12px;
+	overflow: hidden;
+}
+.lscl div{
+	padding-left: 30px;
+	width: 6px;
+	height: 27px;
+	float: left;
+	
+}
+.lscl span{
+	margin-right: 10px;
+}
+.lscl span{
+	float: left;
+}
+.home-share{
+	background: #fff url(../images/icoss.png) 0px -26px no-repeat;
+}
+.home-chat{
+	background: #fff url(../images/icoss.png) 0px -53px no-repeat;
+}
+.home-love{
+	background: #fff url(../images/icoss.png) 0px -173px no-repeat;
+}
+.home-look{
+	background: #fff url(../images/icoss.png) 0px -115px no-repeat;
+}
+.friendLink{
+	width: 1080px;
+	height: 142px;
+	margin: 86px auto;
+}
+.fLink-top{
+	width: 1080px;
+	height: 54px;
+	background-color: #e5e5e5;
+}
+.fLink-bottom{
+	height: 88px;
+	width: 1080px;
+	background-color: #fff;
+}
+.topic-describe>span{
+	margin-left: 38px;
+	font-size: 0.8em;
+}
+.colorblue{
+	color: #111;
+}

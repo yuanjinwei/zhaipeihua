@@ -1,0 +1,369 @@
+html{color:#000;background:#FFF; height: 100%; font-family: '微软雅黑';}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+a{ text-decoration: none; }
+.fl{float: left;}
+.fr{float: right;}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+}
+.container{
+	width: 1010px;
+	height: 660px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.header{
+	width: 100%;
+	height: 100px;
+}
+.header .logo{
+	margin: 30px 0 0 20px;
+}
+.footerRight{
+	width: 400px;
+	height: 100%;
+}
+.footerRight li a{
+	display: block;
+}
+.footerRight li{
+	float: left;
+	width: 100px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	height: 100%;
+}
+.footerRight li:hover{
+	background-color: #eee;
+}
+.liHover{
+	background-color: #eee;
+}
+.footerRight li img{
+	display: block;
+	margin: 0 auto;
+}
+.footerRight li span{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    color: #31b687;
+}
+.rolling{
+	color: #8a8a8a;
+    box-sizing: border-box;
+    height: 25px;
+    margin-right: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #F1F1F1;
+}
+.rolling a{
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	background-color: #F1F1F1;
+	vertical-align: middle;
+	position: absolute;
+	z-index: 5;
+}
+.rolling img{
+	margin: 5px 0 0 5px; 
+}
+.rolling .scrollSpan{
+    margin-left: 650px;	
+    width: 300px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.frameBox{
+	height: 535px;
+	width: 610px;
+}
+.frameBox .history{
+	width: 610px;
+	height: 355px;
+	overflow-y: scroll;
+}
+.frameBox .history ul{
+	width: 100%;
+}
+.frameBox .history ul li{
+	position: relative;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.frameBox .history ul span{
+	display: block;
+	max-width: 70%;
+	color: #fff;
+}
+.frameBox .history ul .CusService div{
+	    background: #31B687 url(../images/op_h.png) center center no-repeat;
+	    margin: 0 10px;
+	    width: 40px;
+	    height: 40px;
+	    float: left;
+}
+.frameBox .history ul .CusService span{
+	position: relative;
+	background-color: #31B687;
+	margin-left: 10px;
+	padding: 10px;
+	float: left;
+}
+.frameBox .history ul .CusService span>img:nth-child(1){
+	position: absolute;
+	left: -10px;
+	top : 0px;
+}
+.frameBox .history ul .optMe{
+	overflow: hidden;
+}
+.frameBox .history ul .optMe div{
+	    background: #E3E4E3 url(../images/v_h.png) center center no-repeat;
+	    float: right;
+	    margin: 0 10px;
+	    width: 40px;
+	    height: 40px;
+}
+.frameBox .history ul .optMe span{
+	position: relative;
+	background-color: #E3E4E3;
+	margin-right: 10px;
+	padding: 10px;
+	float: right;
+}
+.frameBox .history ul .optMe span div{
+	display: none;
+}
+.frameBox .history ul .optMe span img:nth-child(1){
+	position: absolute;
+	right: -10px;
+	top: 0;
+}
+.frameBox .history ul .optMe span img{
+	vertical-align: middle;
+}
+
+.frameBox .ico{
+	width: 610px;
+	height: 32px;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+}
+.frameBox .ico .icoList{
+	width: 100%;
+	height: 100%;
+}
+.frameBox .ico .icoList>li{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 4px 0 0 5px;
+	cursor: pointer;
+}
+.frameBox .ico .icoList .fontImg{
+	background: #fff url(../images/toolsbar.png) -4px 2px no-repeat;
+}
+.frameBox .ico .icoList .fontOpt{
+	width: 40px;
+	height: 19px;
+}
+.frameBox .ico .icoList .fontOpt select{
+	width: 40px;
+	height: 19px;
+	font-size: 13px;
+	margin: 3px 3px;
+}
+.frameBox .ico .icoList .save{
+	background: #fff url(../images/toolsbar.png) -4px -212px no-repeat;
+	margin-left: 15px;
+}
+.frameBox .ico .icoList .voice{
+	background: #fff url(../images/toolsbar.png) -4px -50px no-repeat;
+	margin-left: 10px;
+}
+.frameBox .ico .icoList .icoBtn{
+	background: #fff url(../images/toolsbar.png) -4px -84px no-repeat;
+	margin-left: 10px;
+	position: relative;
+}
+.frameBox .inputS{
+	height: 100px;
+	width: 100%;
+    overflow-x: hideen;
+    overflow-y: scroll;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-indent: 2em;
+    padding: 6px;
+    box-sizing: border-box;
+    outline: none;
+    color: #666;
+}
+.frameBox .send{
+	height: 46px;
+	width: 100%;
+}
+.frameBox .send .sendBtn{
+	width: 200px;
+	height: 30px;
+	margin: 8px 0 0 0;
+}
+.frameBox .send .sendBtn>li{
+	width: 80px;
+    background-color: #33C28F;
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    float: left;
+    margin-right: 16px;
+    cursor: pointer;
+}
+/*表情样式*/
+.frameBox .ico .icoList .icoBtn .face{
+	width:390px; 
+	height:160px; 
+	background:#fff; 
+	padding:10px;
+	border:1px solid #ddd; 
+	position:absolute;/*绝对定位*/ 
+	top:-187px; 
+	left:-160px;
+	display:none;/*隐藏*/
+}
+.frameBox .ico .icoList .icoBtn .face ul li{
+	width:22px;
+	height:22px;
+	list-style-type:none;/*去掉圆点*/ 
+	float:left;
+	margin:2px;
+	cursor:pointer;
+}
+
+/*输入框右侧样式*/
+.options{
+	width: 399px;
+	height: 560px;
+	margin-top: -25px;
+	position:relative;
+	z-index: 55;
+	border-left: 1px solid #F4F4F4;
+}
+.options .optHeader{
+	height: 30px;
+	width: 100%;
+	background-color: #fff;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+	padding: 0 15px;
+	box-sizing: border-box;
+    overflow: hidden;
+}
+.options .optHeader span{
+	background-color: #31B687;
+    color: #fff;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 12px;
+    font-size: 14px;
+}
+.options .severList{
+	width: 100%;
+	height: 348px;
+}
+.options .severList>li{
+	float: left;
+	color: #138f67;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.options .severList>li>a{
+	padding: 20px 13px ;
+	color: #444;
+}
+.options .optBottom{
+	font-family: 黑体;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    letter-spacing: 2px;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+/*弹出框*/
+.options .alertInput{
+	position: absolute;
+	top : 50px;
+	left: 5px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    display: none;
+    margin: 0px 1%;
+    padding: 10px;
+    width: 96%;
+    box-sizing: border-box;
+    z-index: 66;
+}
+.options .alertInput .alertHover{
+	width: 80px;
+	height: 0;
+	border: 2px solid #31B687;
+	position: absolute;
+	top : 0;
+	left: 100px;
+}
+.options .alertInput>li{
+	float: left;
+	width: 48%;
+	font-size: 13px;
+    color: #535353;
+    line-height: 26px;
+    padding: 0 1px;
+    margin-left: 2px;
+    cursor : pointer;
+}
+.options .alertInput>li:hover{
+	background-color: #eee;
+}
+.options .alertInput>li>span{
+	font-size: 12px;
+    color: #a7a7a7;
+    font-style: normal;
+}

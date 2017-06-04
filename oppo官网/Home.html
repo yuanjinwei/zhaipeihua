@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>oppo手机官网</title>
+		<link rel="stylesheet" href="css/page.css" />
+		<link rel="stylesheet" href="css/PublicIndex.css" />
+		<script type="text/javascript" src="js/jquery-3.2.0.js" ></script>
+		
+	</head> 
+	<body>
+		<!--头部开始-->
+		<header>
+			<div class="topNav">
+				<ul>
+					<li><a href="404.html">登录</a></li>
+					<li><a href="404.html">注册</a></li>
+					<li>Global</li>
+				</ul>
+			</div>
+			<nav class="headerNav">
+				<div>
+					<div class="logo"><a href="Home.html"><img src="images/logologo.png"/></a></div>
+					<ul>
+						<li><a href="Home.html" class="headerNavColor">首页</a></li>
+						<li><a href="404.html">产品</a></li>
+						<li><a href="shopping.html">商城</a></li>
+						<li><a href="404.html">体验店</a></li>
+						<li><a href="serve.html" >服务</a></li>
+						<li><a href="404.html">ColorOS</a></li>
+						<li><a href="community.html">社区</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--这是轮播图-->
+		<div class="carousel">
+			<ul class="list">
+				<li style="z-index:1"><a href="index.html"><img src="images/a6.jpg" alt="" /></a></li>
+				<li><a href="shoppingDetails.html"><img src="images/a5.jpg" alt="" /></a></li>
+				<li><a href="serve.html"><img src="images/a1.jpg" alt="" /></a></li>
+			</ul>
+			<ul class="nav" style="z-index: 2">
+				<li class="selected"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		<button id="btn1" style="z-index: 3"></button>
+		<button id="btn2" style="z-index: 3"></button>
+		</div>
+		<!--轮播图下面图片-->
+		<div id="section">
+			<ul>
+				<li><a href="shopping.html"><img src="images/a2aaasdas.jpg"/></a></li>
+				<li><a href="shoot.html"><img src="images/dsadasf.jpg"/></a></li>
+				<li><a href="shoppingDetails.html"><img src="images/a4.png"/></a></li>
+			</ul>
+		</div>		
+		<script>
+			//获取nav
+	var index = 0;
+		$('.nav').on('click','li',function(){
+			$('.nav>li').removeClass('selected');
+			$(this).addClass('selected');
+			//获取index,操作相应的图片
+			 index = $('.nav>li').index(this);		
+			$('.list>li:eq('+index+')').css('left',$(window).width()).siblings().css('width',$(window).width()).stop(true).animate({
+			left :-$(window).width()
+		},1000);
+		$('.list>li:eq('+index+')').stop(true).animate({
+			left :0
+		},1000);
+			
+
+		})
+		function run(next){
+			if(next==1){
+				index++
+				if(index > 2){
+					index = 0;
+				}
+			}else{
+				index--
+				if(index < 0){
+					index = 2
+				}
+			}			
+		$('.list>li:eq('+index+')').css('left',$(window).width()).siblings().css('width',$(window).width()).stop(true).animate({
+			left :-$(window).width()
+		},1000);
+		$('.list>li:eq('+index+')').stop(true).animate({
+			left :0
+		},1000);
+		$('.nav>li').removeClass('selected').eq(index).addClass('selected');
+		}
+		//设置定时器
+    	var timer =  setInterval(function(){run(1)}, 3000);
+
+	    $('.carousel').mouseover(function(){
+	       	clearInterval(timer)
+	       })
+		$('.carousel').mouseout(function(){
+		 	timer = setInterval(function(){run(1)}, 3000)
+		});
+		 
+		$('#btn1').click(function(){
+			run(0)
+		})	
+		$('#btn2').click(function(){
+			run(1)
+		})	
+		</script>
+		<!--回到顶部-->
+		<div class="scroll" id="scroll" >
+			<div id="top">
+				回到顶部
+			</div>
+		</div>
+	    <div class="msg" id="msg" >
+	    	<div id="opinion">
+	    	<a href="404.html" style="line-height: 100%;">意见反馈</a>	
+	    	</div>
+	    </div>
+	<script type="text/javascript">
+//		回到顶部
+	$(function(){
+		showScroll();
+		function showScroll(){
+			$(window).scroll( function() { 
+				var scrollValue=$(window).scrollTop();
+				scrollValue > 100 ? $('div[class=scroll]').fadeIn():$('div[class=scroll]').fadeOut();
+			} );	
+			$('#scroll').click(function(){
+				$("html,body").animate({scrollTop:0},200);	
+			});	
+		}
+	})
+	
+	</script>
+	<!--意见反馈-->
+	<script>
+		$(function(){
+		showScroll();
+		function showScroll(){
+			$(window).scroll( function() { 
+				var scrollValue=$(window).scrollTop();
+				scrollValue > 100 ? $('.msg').fadeIn():$('.msg').fadeOut();
+			} );	
+		}
+	})
+	</script>
+	<!--尾部开始-->
+	<footer>
+			<div class="footerFirst">
+				<div class="footerNav">
+					<ul>
+						<li><a href="javascrpt:;">随机机型</a></li>
+						<li><a href="shoppingDetails.html">R9s</a></li>
+						<li><a href="shoppingDetails.html">R9s Plus</a></li>
+						<li><a href="shoppingDetails.html">A57</a></li>
+						<li><a href="shoppingDetails.html">A59s</a></li>
+					</ul>
+					<ul>
+						<li><a href="javascrpt:;">在线购买</a></li>
+						<li><a href="shopping.html">官方商城</a></li>
+						<li><a href="shopping.html">购物指南</a></li>
+						<li><a href="shopping.html">官方授权网店</a></li>
+					</ul>
+					<ul>
+						<li><a href="javascrpt:;">服务</a></li>
+						<li><a href="404.html">服务网点查询</a></li>
+						<li><a href="404.html">零配件价格查询</a></li>
+						<li><a href="404.html">云服务</a></li>
+					</ul>
+					<ul>
+						<li><a href="javascrpt:;">关于我们</a></li>
+						<li><a href="404.html">关于OPPO</a></li>
+						<li><a href="404.html">加入我们</a></li>
+						<li><a href="404.html">采购相关</a></li>
+						<li><a href="404.html">发布会回顾</a></li>
+					</ul>
+					<div class="footerServe">
+						<div><a href="chat.html"><img src="images/icon-online.png"/></a></div>
+						<p id="phone">4001-666-888</p>
+						<script type="text/javascript">
+							//ie字体大小兼容
+								function ie(){
+									function isIE() { 
+										 if (!!window.ActiveXObject || "ActiveXObject" in window)
+										  return true;
+										  else
+										  return false;
+									 }
+									if(isIE()==true){
+										$('#phone').css('font-size','30px')
+									}else{
+										$('#phone').css('font-size','25px')
+									}
+								}
+								ie()
+						</script>
+						<span>（24小时全国服务热线）</span>
+					</div>
+				</div>
+			</div>
+			<div class="copyrigth">
+				<p>&copy;&nbsp;2005&nbsp;-&nbsp;2017&nbsp;OPPO&nbsp;版权所有&nbsp;粤ICP备08130115号-1&nbsp;联系方式：4001-666-888</p>
+				<a href="404.html"></a>
+				<div class="weixinweibo">
+					<span>关注我们：</span>
+					<a href="404.html" class="weibo"><sapn></sapn></a>
+					<a href="404.html" class="weixin"><sapn id="weixin"></sapn></a>
+					<a href="404.html" class="zhifubao"><sapn id="zhifubao"></sapn></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+
+/*轮播开始*/
+.carousel{
+	width: 100%;
+	height:590px;	
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.carousel img{
+	width: 100%;
+	height: 590px;
+	position: relative;
+	
+}
+.list{
+	position: relative;
+	margin-left: ;
+}
+.list>li{
+	position: absolute;
+}
+.nav{
+	position: absolute;
+	bottom:10px;
+	left:50%;
+	margin-left: -50px;
+}
+.nav>li{
+	width: 10px;
+	height: 10px;
+	border: 2px solid #7b7b7b;
+	border-radius: 50%;
+	background-color: #7b7b7b;
+	outline: none;
+	float: left;
+	margin-left: 14px;	
+}
+.nav .selected{
+	border: 2px solid #208455;
+	background: #fff;
+}
+/*左右按钮*/
+#btn1{
+		width: 35px;
+		height: 67px;
+		background: url("../images/sprite-icons.png");
+		background-position: -2px -152px;
+		position: absolute;
+		top: 262px;
+		margin-left: 56px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		}
+#btn2{
+		width: 35px;
+		height: 67px;
+		background: url("../images/sprite-icons.png");
+		background-position: -1px -73px;
+		position: absolute;	
+		right: 56px;	
+		top: 262px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+/*轮播图下面*/
+#section{
+	width: 100%;
+	height: 252px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+#section ul{width: 100%;}
+#section ul li a img{
+	float: left;
+	width: 33%;
+	height: 252px;
+	margin-left: 4px;
+}
+/*回到顶部*/
+body{
+	position: relative;
+}
+/*这顶部*/
+.scroll{
+		width: 40px;
+	    height: 35px;
+		position:fixed;
+		right:20px;
+		bottom:39px;
+		cursor:pointer;
+		background:#ededed url("../images/backtop-icon.png") no-repeat 10px 9px;
+	}
+/*意见反馈*/
+	.msg{
+	width: 40px;
+	height: 35px;
+	position: fixed;
+	right: 20px;
+	bottom: 0px;
+	cursor:pointer;
+	background: #ededed url("../images/feedback-icon.png") no-repeat 10px 9px;
+}
+
+.scroll #top{
+		width: 78px;
+		height: 35px;
+		background-color: #47b488;
+		position: absolute;
+		left: -78px;
+		color: #fff;
+		text-align: center;
+		line-height: 37px;
+		font-size: 14px;
+		display: none;
+	}
+.scroll:hover{
+		background:#47b488 url("../images/backtop-icon-active.png") no-repeat 10px 9px;
+	}
+.scroll:hover #top{
+		display: block;
+		background: #47b488;
+	}
+ .msg #opinion{
+	    width: 78px;
+		height: 35px;
+		background-color: #47b488;
+		position: absolute;
+		left: -78px;		
+		text-align: center;
+		line-height: 37px;		
+		display: none;
+}
+.msg #opinion a{
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+.msg:hover{
+	background: #47b488 url("../images/feedback-icon-active.png") no-repeat 10px 9px;
+}
+.msg:hover #opinion{
+	display: block;
+	background:#47b488;
+}
+

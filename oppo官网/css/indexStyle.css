@@ -1,0 +1,373 @@
+html{color:#000;background:#FFF; font-family: '微软雅黑';}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+a{ text-decoration: none; }
+.fl{float: left;}
+.fr{float: right;}
+a:hover{ text-decoration: underline; }
+
+body{
+	color: #000;
+    font-size: 18px;
+    overflow-y: hidden;
+}
+/*背景图片*/
+.bgBox{
+	position: fixed;
+	width: 100%;
+	height: 12000px;
+	top : 0px;
+	z-index: -1;
+}
+.bgBox img{
+	width: 100%;
+	height: 1000px;
+}
+.bgBox div{
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+.bgBox .bgImg1{
+	top : 0px;
+}
+.bgBox .bgImg2{
+	top: 1000px;
+}
+.bgBox .bgImg3{
+	top: 2000px;
+}
+
+
+/*内容*/
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+}
+.heBox{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.heBox a{
+	font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    margin: 11px 6px;
+}
+/*第一块*/
+.item_1{
+	padding-top: 500px;
+}
+.item_1 .hdImg{
+	position : relative;
+	height: 428px;
+}
+.item_1 .hdImg img{
+	width: 100%;
+}
+.item_1 .hdImg .arrowBtn{
+	position: relative;
+	margin-top: 200px;
+	left: 50%;
+	width: 46px;
+	margin-left: -23px;
+}
+.item_1 .contern_text{
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	font-weight: 100;
+	position: relative;
+	margin-top: 10px;
+}
+.item_1 .contern_text p{
+    font-size: 18px;
+    line-height: 2.5em;
+}
+.item_1 .video_con{
+	position: relative;
+	width: 100%;
+	height: 1080px;
+}
+.item_1 .video_con video{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	display: none;
+}
+.item_1 .video_con img{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.item_1 .video_con a{
+	position: absolute;
+	display: block;
+	width: 122px;
+	height: 122px;
+	left: 50%;
+	top: 50%;
+	margin: -61px 0 0 -61px;
+}
+.imgListBox{
+	height: 790px;
+	width: 100%;
+	background-color: #fff;
+	margin-top: -10px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.imgListBox .imgList h1{
+	text-align: center;
+	font-size: 36px;
+    line-height: 100px;
+    font-weight: 200;
+}
+.imgListBox .imgList .imgBox{
+	width: 894px;
+	height: 572px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.imgListBox .imgList .imgBox a{
+	display: inline-block;
+    float: left;
+    margin: 0 9px 9px 0;
+    width: 288.75px;
+    height: 280.5px;
+}
+.imgListBox .imgList .imgBox a img{
+	width: 100%;
+}
+
+/*点击出现的大图*/
+.imgListBox .bigImgBox{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top : 0;
+	background: #000;
+	display: none;
+	z-index: 299;
+}
+.imgListBox .bigImgBox .bigImg{
+	width: 65%;
+	max-width: 65%;
+	height: 90%;
+	position: relative;
+	top: 10%;
+	left : 50%;
+	margin-left: -32%;
+	overflow: hidden;
+}
+.imgListBox .bigImgBox .bigImg li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top : 0;
+} 
+.imgListBox .bigImgBox .bigImg li img{
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+} 
+.imgListBox .bigImgBox a{
+	position: absolute;
+}
+.imgListBox .bigImgBox .prevBtn{
+	top : 50%;
+	left: 15%;
+}
+.imgListBox .bigImgBox .nextBtn{
+	top : 50%;
+	right: 15%;
+}
+.imgListBox .bigImgBox .closeBtn{
+	top : 10%;
+	right: 15%;
+}
+
+.item_3{
+	padding-top: 400px;
+}
+.item_4{
+	padding-top: 100px;
+	background-color: #fbf8ec;
+	overflow: hidden;
+	height: 1530px;
+}
+.item_4 .wrapper_4{
+	width: 1180px;
+	margin: 0 auto;
+}
+.wrapper_4 .title_4 img{
+	display: block;
+	margin: 0 auto;
+}
+.wrapper_4 .title_4 p{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 4em;
+    word-wrap: break-word;
+    font-weight: 200;
+}
+.wrapper_4 .video_4{
+	margin: 40px auto 50px auto;
+    width: 885px;
+    height: 497.25px;
+}
+.item_4 .imgListBox_4{
+	background-color: #fbf8ec;
+}
+
+.oppoR9s{
+	padding-top: 210px;
+	margin: 0 auto;
+	width: 1180px;
+	height: 870px;
+}
+.oppoR9s .shopping{
+	margin-top: 434px;
+    margin-right: 68px;
+}
+.oppoR9s .shopping a{
+	display: block;
+    margin: 36px auto 0 auto;
+    background-color: #61b89b;
+    border-radius: 3px;
+    color: #fff;
+    width: 203px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+}
+.oppoR9s .shopping span{
+	color: #171717;
+    font-size: 33px;
+    font-weight: 200;
+    display: block;
+}
+footer{
+	height: 70px;
+	margin-top: 130px;
+    background-color: #2b2b2b;
+    border-top: solid 5px #000;
+    text-align: center;
+    line-height: 70px;
+    color: #828282;
+    font-size: 12px;
+}
+/*侧边导航按钮*/
+.sidebar{
+	width: 86px;    
+	position: fixed;
+    top: 30%;
+    right: 60px;
+    z-index: 100;
+    display: none;
+    font-size: 12px;
+}
+.sidebar li{
+	background-color: rgba(0,0,0,0.25);   
+	width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+body .sidebar li:nth-child(6){
+	margin-top: 15px;
+}
+body .sidebar li:nth-child(6):hover .qrCode{
+	display: block;
+}
+.sidebar li.share{
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.sidebar li.share img{
+	display: block;
+	margin: 0 auto;
+	padding-top: 14px;
+	width: 16px;
+}
+.qrCode{
+	position: absolute;    
+	top: -25px;
+    left: -150px;
+    width: 150px;
+    display: none;
+    padding-right: 30px;
+}
+body .sidebar .qrCode img{
+	float: left;
+	width: 44px;
+	margin: 10px;
+}
+
+/*开始的动画*/
+.begin{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 999;
+}
+.begin .KeepOutLeft{
+	width: 50%;
+	height: 100%;
+	background: url(../images/curtain-left.jpg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.begin .KeepOutRight{
+	width: 50%;
+	height: 100%;
+	background: url(../images/curtain-left.jpg);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.begin .KeepOutUp,.begin .KeepOutDown{
+	height: 50%;
+	width: 0;
+	border: 1px solid #fff;
+	position: absolute;
+	left: 50%;
+}
+.begin .KeepOutUp{
+	top: 0;
+}
+.begin .KeepOutDown{
+	bottom: 0;
+}
+.begin img{
+	position: absolute;
+	width: 552px;
+	left: 50%;
+	top: 50%;
+	margin: -280px 0 0 -271px;
+}
